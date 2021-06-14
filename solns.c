@@ -13,3 +13,17 @@ int max(int arr[],int count)
   }
   return maxx;
 }
+
+
+int min(int arr[],int count)
+{
+  int minn=0;
+  for(int i=0;i<count;i++)
+  {
+    if(arr[i] < minn)
+    {
+      minn = arr[i];
+    }
+  }
+  return minn;
+}
