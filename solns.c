@@ -51,6 +51,7 @@ int factors(int num,int arr[])
       c +=1;
       arr[k]=i;
       num = num/i;
+      k++;
     }
   }
   return c;
