@@ -87,5 +87,5 @@ int mode(int arr[],int n)
      }
    }
    
-   return printf("%i\n",max;
+   return printf("%i\n",max);
 }
