@@ -56,3 +56,33 @@ int factors(int num,int arr[])
   }
   return c;
 }
+
+int mode(int arr[],int n)
+{
+  int arr2[]={};
+  int temp=0;
+  for(int i=0; i<n; i++)
+  {
+    temp = arr[i];
+    int count=0;
+     for(int j=i+1; j<n; j++)
+     {
+       if(arr[j]==arr[i])
+       {
+         count++;
+       }
+      }
+     arr2[i] = count;
+  }
+  int max=0;
+  for(int k=0; k<n;k++)
+  {
+     if(arr2[k] > max)
+     {
+       max = arr[k];
+     }
+     
+   }
+   
+   return  max;
+}
