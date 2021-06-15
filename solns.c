@@ -15,10 +15,10 @@ int max(int arr[],int count)
 }
 
 
-/* int min(int arr[],int count)
+ int min(int arr[],int count)
 {
-  int minn=0;
-  for(int i=0;i<count;i++)
+  int minn=arr[0];
+  for(int i=1;i<count;i++)
   {
     if(arr[i] < minn)
     {
@@ -26,7 +26,7 @@ int max(int arr[],int count)
     }
   }
   return minn;
-} */
+} 
 
 float average(int arr[],int count)
 {
