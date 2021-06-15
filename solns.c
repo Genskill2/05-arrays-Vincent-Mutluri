@@ -39,3 +39,19 @@ float average(int arr[],int count)
   avg = sum/count;
   return avg;
 }
+
+int factors(int num,int arr[])
+{
+  int c=0;
+  int k=0;
+  for(int i=2;num>1;i++)
+  {
+    while(num%i==0)
+    {
+      c +=1;
+      arr[k]=i;
+      num = num/i;
+    }
+  }
+  return c;
+}
