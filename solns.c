@@ -71,7 +71,7 @@ int mode(int arr[],int n)
        {
          count++;
        }
-      }
+     }
      arr2[i] = count;
   }
   int max=arr2[0];
@@ -81,12 +81,11 @@ int mode(int arr[],int n)
      {
        max = arr[k];
      }
-    else
-    {
-      max = arr[k];
-    }
-     
+     else
+     {
+     max = arr[k];
+     }
    }
    
-   return  max;
+   return max;
 }
