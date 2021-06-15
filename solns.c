@@ -62,7 +62,7 @@ int mode(int arr[],int n)
   int max;
   if(n==1)
   {
-    max = arr[o];
+    max = arr[0];
   }
   else 
   {
