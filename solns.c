@@ -74,13 +74,17 @@ int mode(int arr[],int n)
       }
      arr2[i] = count;
   }
-  int max=0;
+  int max=arr2[0];
   for(int k=0; k<n;k++)
   {
      if(arr2[k] > max)
      {
        max = arr[k];
      }
+    else
+    {
+      max = arr[k];
+    }
      
    }
    
