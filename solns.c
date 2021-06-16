@@ -59,41 +59,21 @@ int factors(int num,int arr[])
 
 int mode(int arr[],int n)
 {
-  int max;
-  if(n==1)
-  {
-    max = arr[0];
-  }
-  else 
-  {
-  int arr2[]={};
-  int temp=0;
+  int count=0,maxCount=0,mode=0;
   for(int i=0; i<n; i++)
   {
-    temp = arr[i];
-    int count=1;
-     for(int j=0; j<n; j++)
-     {
-       if(arr[j]==arr[i])
-       {
-         count++;
-       }
-     }
-     arr2[i] = count;
+    for(int j=0; j<n; j++)
+    {
+      if(arr[j] == arr[i])
+      {
+        count +=1;
+      }
+    }
+      if(count>maxCount)
+      {
+      maxCount = count;
+      mode= arr[i];
+      }
   }
-   max=arr2[0];
-  for(int k=0; k<n;k++)
-  {
-     if(arr2[k] > max)
-     {
-       max = arr[k];
-     }
-     else
-     {
-     max = arr[k];
-     }
-   }
-  }
-   
-   return printf("%i\n",max);
+  return mode; 
 }
