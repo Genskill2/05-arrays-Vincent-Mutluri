@@ -59,11 +59,12 @@ int factors(int num,int arr[])
 
 int mode(int arr[],int n)
 {
-  int count=0,maxCount=0,mode=0;
+  int maxCount=0,mode=0;
   for(int i=0; i<n; i++)
   {
     for(int j=0; j<n; j++)
     {
+      int count=0;
       if(arr[j] == arr[i])
       {
         count +=1;
